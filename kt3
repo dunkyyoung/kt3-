@@ -1,0 +1,136 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио</title>
+</head>
+<body>
+  <header>
+    <h1>Иван Иванов</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Обо мне</a></li>
+        <li><a href="#">Проекты</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Обо мне</h2>
+      <p>Я веб-разработчик с опытом работы более 5 лет. Специализируюсь на создании современных и функциональных сайтов.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Мои проекты</h2>
+      <ul>
+        <li>
+          <h3>Проект 1</h3>
+          <p>Описание проекта 1</p>
+          <a href="#">Подробнее</a>
+        </li>
+        <li>
+          <h3>Проект 2</h3>
+          <p>Описание проекта 2</p>
+          <a href="#">Подробнее</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Иван Иванов. Все права защищены.</p>
+  </footer>
+</body>
+</html>
+<style>
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Сетка */
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 40px;
+}
+
+/* Стили для header */
+header {
+  grid-column: 1 / -1;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+/* Стили для main content */
+#about {
+  grid-column: 1 / 7;
+}
+
+#projects {
+  grid-column: 7 / -1;
+}
+
+section h2 {
+  color: #333;
+}
+
+/* Стили для проектов */
+#projects ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#projects li {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#projects h3 {
+  margin-top: 0;
+}
+
+#projects a {
+  color: #333;
+  text-decoration: none;
+}
+
+#projects a:hover {
+  color: #666;
+}
+
+  </style>
